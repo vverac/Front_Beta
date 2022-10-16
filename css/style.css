@@ -1,0 +1,65 @@
+.navbar {
+  background: #6F97FF;
+}
+
+.btn{
+  background-color: #6F97FF importat !important;
+}
+.btn-1{
+  color: #6F97FF ;
+}
+.name{
+  padding-top: 33px;
+  color: #8D8787;
+}
+.prof{
+  color: #FF7300
+}
+.auto-bio{
+  padding-top: 72px;
+}
+.info{
+   color: #8D8787;
+}
+.card{
+  width: 511px !important;
+  height: 654px !important;
+   color: #8D8787;
+}
+
+.card-1{
+  padding-left: 114px;
+  padding-top: 105px;
+}
+.card-text{
+  padding-left: 50px;
+  text-align: justify;
+}
+.card-body{
+ padding: 0;
+  width: 450px !important;
+  height: 86px !important;
+}
+.parrafo{
+   width: 450px !important;
+  height: 426px !important;
+   text-align:justify;
+}
+.formulario{
+  padding-top: 105px;
+  padding-left: 120px;
+  padding-right: 116px;
+}
+.btn-2{
+   background: #6F97FF
+}
+.pie-pagina{
+    background: #6F97FF;
+     width: 1440px !important;
+  height: 96px !important;
+
+}
+/* .p-pie{
+ 
+} */
+
