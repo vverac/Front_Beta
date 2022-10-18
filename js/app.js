@@ -45,12 +45,31 @@ async function cargarUsuarios() {
 
   let listadoHtml = ''
   for (let usuario of usuarios) {
+    let botonEliminar = "<a href=\"#\" onclick='eliminarUsuario(" + usuario.id + ")' class=\"btn btn-danger btn-circle btn-sm\"><i class=\"fas fa-trash\"></i></a>";
 
     let usuarioHtml = '  <tr><td>' + usuario.nombre + '</td><td>' + usuario.rut + '</td><td>'
-      + usuario.direccion + '</td><td>' + usuario.telefono + '</td><td>' + usuario.email + '</td></tr>'
+      + usuario.direccion + '</td><td>' + usuario.telefono + '</td><td>' + usuario.email + '</td><td>' + botonEliminar + '</td></tr>'
 
     listadoHtml += usuarioHtml
   }
   document.querySelector("#usuarios tbody").outerHTML = listadoHtml;
+}
+//" + usuario.id + "
+
+
+async function eliminarUsuario(id) {
+  //alert(id)
+  if (!confirm("¿Desea eliminar este usuario?")) {
+    return;
+  }
+  const request = await fetch('http://localhost:8080/paciente/getPacientes/' + id, {
+    method: "DELETE",
+    //indica que el contenido es json
+    header: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+    },
+  })
+  location.reload();
 }
 

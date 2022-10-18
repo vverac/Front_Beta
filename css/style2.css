@@ -17,7 +17,14 @@ margin-top: 20%;
 .formulario{
   padding: 15px;
 }
+.btnIniciar{
+   background: #6F97FF;
+     align-items: center;
+}
 .btn{
     background: #6F97FF;
      align-items: center;
+         width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
